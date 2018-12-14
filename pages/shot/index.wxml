@@ -1,0 +1,11 @@
+<!--pages/shot/index.wxml-->
+
+<view class='avatar-container'>
+  <canvas class='cropper' disable-scroll='true' canvas-id='{{id}}' style='width:{{width}}px;height: {{height}}px;background: {{background}};' bindtouchstart='touchStart' bindtouchmove='touchMove' bindtouchend='touchEnd'></canvas>
+
+  <cover-view class='button-wrap'>
+    <button bindtap="onCancel">取消</button>
+    <button bindtap="getCropperImage">确定</button>
+    <button bindtap="chooseImage">选择图片</button>
+  </cover-view>
+</view>

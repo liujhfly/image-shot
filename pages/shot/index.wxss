@@ -1,0 +1,76 @@
+/* pages/shot/index.wxss */
+
+page {
+  height: 100%;
+}
+
+.avatar-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #000;
+}
+
+.view-container {
+  position: relative;
+  height: 100%;
+}
+
+.mask-view-box {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 5;
+}
+
+.mask-item, .mask-center {
+  flex: 1;
+}
+
+.mask-item-center {
+  display: flex;
+  flex-direction: row;
+}
+
+.mask-center-middle {
+  width: 300rpx;
+  height: 300rpx;
+  border: 2rpx dashed #00BD29;
+}
+
+.mask-item.top, .mask-item.bottom, .mask-center.left, .mask-center.right {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.button-wrap {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 50rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 88rpx;
+  background-color: transparent;
+  z-index: 10;
+}
+
+.button-wrap button {
+  width: 100%;
+  font-size: 28rpx;
+  line-height: 2.8;
+  color: #fff;
+  background-color: transparent;
+}
+
+.button-wrap button::after {
+  border: none;
+}
+
+.button-wrap button.button-hover {
+  opacity: 0.7;
+}
